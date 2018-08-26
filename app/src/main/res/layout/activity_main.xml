@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.manju.sensor_app.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:textSize="20sp"
+        android:text="Accelerometer" />
+
+    <TextView
+        android:id="@+id/accX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="X"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/accY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y"
+        android:layout_alignBaseline="@+id/accX"
+        android:layout_alignBottom="@+id/accX"
+        android:layout_toStartOf="@+id/magY"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:id="@+id/accZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/accY"
+        android:layout_marginEnd="33dp"
+        android:text="Z" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Gyroscope"
+        android:textSize="20sp"
+        android:layout_below="@+id/accY"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/gyrX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/accX"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="20dp"
+        android:text="X" />
+
+    <TextView
+        android:id="@+id/gyrY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y"
+        android:layout_alignBaseline="@+id/gyrX"
+        android:layout_alignBottom="@+id/gyrX"
+        android:layout_alignStart="@+id/accY" />
+
+    <TextView
+        android:id="@+id/gyrZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/accZ"
+        android:layout_alignTop="@+id/gyrY"
+        android:text="Z" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Magnetometer"
+        android:textSize="20sp"
+        android:layout_below="@+id/gyrY"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:id="@+id/magX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/gyrX"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="22dp"
+        android:text="X" />
+
+    <TextView
+        android:id="@+id/magY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/magX"
+        android:layout_centerHorizontal="true"
+        android:text="Y" />
+
+    <TextView
+        android:id="@+id/magZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/gyrZ"
+        android:layout_alignTop="@+id/magY"
+        android:text="Z" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/magX"
+        android:layout_below="@+id/magX"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="101dp"
+        android:text="Light :" />
+
+    <TextView
+        android:id="@+id/sLigth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/magY"
+        android:layout_alignTop="@+id/textView14"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Pressure :"
+        android:layout_below="@+id/textView14"
+        android:layout_alignStart="@+id/magX" />
+
+    <TextView
+        android:id="@+id/sPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Temperature :"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp" />
+
+    <TextView
+        android:id="@+id/sTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sPressure"
+        android:layout_alignTop="@+id/textView18"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="36dp"
+        android:text="Humidity :" />
+
+    <TextView
+        android:id="@+id/sHum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_alignStart="@+id/sTemp"
+        android:text="" />
+</RelativeLayout>
